@@ -9,7 +9,7 @@ services:
     env_file:
     - .env
     ports:
-      - 3002:3000 
+      - 3000:3000 
     networks:
       - net_vemo
     depends_on:
