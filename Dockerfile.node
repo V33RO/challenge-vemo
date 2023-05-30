@@ -1,0 +1,14 @@
+FROM node:alpine
+WORKDIR /app
+COPY ./api/package*.json /
+RUN npm install
+COPY . .
+RUN npm run build
+EXPOSE 3000
+# ENV POSTGRES_HOST=name/address:postgres
+# ENV POSTGRES_PORT=5432
+# ENV POSTGRES_USER=root
+# ENV POSTGRES_PASSWORD=password
+# ENV POSTGRES_DB=my_dbvemo
+
+CMD ["npm","run","start"]

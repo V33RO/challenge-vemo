@@ -1,0 +1,16 @@
+<div class="countries--grid">
+  <app-country
+    [country]="country"
+    *ngFor="let country of countries"
+    (showCountry)="onShowDetail($event)"
+  ></app-country>
+ <!-- <button (click)="onLoadMore()">Load more</button> -->
+</div>
+<!-- <div class="country-detail" [class.active]="showCountryDetail">
+  <div>
+    <button (click)="toggleCountryDetail()">Close</button>
+    <h1>{{ countryChosen.name}}</h1>
+        <img [src]="countryChosen.flags" alt="">
+    <p>{{countryChosen.capital}}</p>
+  </div>
+</div> -->

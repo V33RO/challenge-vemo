@@ -1,0 +1,35 @@
+p, h2 {
+  margin: 0;
+}
+
+.card {
+  width: 200px;
+  height: 180px;
+  border: 1.5px solid #ACD9B2;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+.card:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}

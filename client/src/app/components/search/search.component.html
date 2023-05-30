@@ -1,0 +1,13 @@
+<form>
+  <div>
+<input class="input"
+type="search" placeholder="enter country name"
+[(ngModel)]="name" (input)="onSearch()"
+[formControl]="formSearch">
+<button [disabled]="formSearch.invalid" class ="button-buscar"
+(click)="onEmitionsearch()">Search</button>
+<div>
+  <strong *ngIf="formSearch.hasError('pattern')">only letters</strong>
+</div>
+</div>
+</form>

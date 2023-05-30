@@ -1,0 +1,39 @@
+<div class="background-all-detail">
+<div class="card-detail">
+    <div class="content">
+  <div class="card-content-detail">
+    <div class="left-div">
+     <img [src]="country.flags">
+    </div>
+    <div class="right-div">
+      <h3 class="card-title-detail">{{ country.name }}</h3>
+    <p class="card-description-detail">{{ country.capital }}</p>
+   <div class="container-data">
+    <div class="data-currency">
+          <li>Currency: </li>
+          <div class="currency-for"
+          *ngFor="let item of country.currencies | keyvalue">
+          <div>{{ item.value.name | json }}</div>
+          <div>{{ item.value.symbol | json }}</div>
+    </div>
+    </div>
+    <div class="data-region">
+          <li>Region: </li>
+          <div>{{country.region}}</div>
+    </div>
+    <div class="data-languages">
+          <li>Languages: </li>
+          <div *ngFor="let itemLeng of country.languages | keyvalue">
+            <div>{{ itemLeng.value | json }}</div>
+          </div>
+    </div>
+    <div class="data-population">
+          <li>Population: </li>
+              <div>{{country.population}}</div>
+    </div>
+    </div>
+   </div>
+  </div>
+  </div>
+</div>
+</div>

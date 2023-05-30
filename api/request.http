@@ -1,0 +1,17 @@
+###
+GET http://localhost:3000/countries/load-data HTTP/1.1
+
+###
+GET http://localhost:3000/countries HTTP/1.1
+
+###
+GET http://localhost:3000/countries?limit=20&offset=0
+
+###
+GET http://localhost:3000/countries/1 HTTP/1.1
+
+###
+GET http://localhost:3000/countries?name=Grenada HTTP/1.1
+
+###
+GET http://localhost:3000/countries?order=Asc HTTP/1.1

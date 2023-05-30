@@ -1,0 +1,57 @@
+version: '3.3'
+services:
+ 
+  api:
+    image: vemo-api:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    env_file:
+    - .env
+    ports:
+      - 3002:3000 
+    networks:
+      - net_vemo
+    depends_on:
+      - postgres
+    restart: always
+ 
+  client:
+    image: vemo-client:1.0.0
+    build:
+     context: .
+     dockerfile: Dockerfile.angular
+    ports:
+      - 4002:4200
+    networks:
+      - net_vemo
+    depends_on:
+     - api
+    restart: always
+  
+  postgres:
+    image: postgres:14
+    env_file:
+      - .env
+    ports:
+      - '5432:5432'
+    networks:
+      - net_vemo
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/mydata
+
+  pgadmin:
+   image: dpage/pgadmin4
+   environment:
+   - PGADMIN_DEFAULT_EMAIL=root@admin.com
+   - PGADMIN_DEFAULT_PASSWORD=root
+   ports:
+   - "5050:80"    
+   networks:
+      - net_vemo
+  
+networks:
+   net_vemo:
+    driver: bridge
+volumes:
+  -vol_postgres:

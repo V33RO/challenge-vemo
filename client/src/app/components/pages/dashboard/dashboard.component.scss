@@ -1,0 +1,36 @@
+.backround-all-dashboard{
+  background-color: white;
+  position: absolute;
+  height:400px;
+  width: 1200px;
+}
+.container {
+  display:inline-block;
+  box-sizing: border-box;
+  height:200px;
+  width: 400px;
+  white-space: nowrap;
+}
+.canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+ h3{
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-left: 30%;
+ }
+ h1{
+  margin-bottom: 20px;
+  font-weight: bond;
+  text-align: center;
+ }
+ .item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-left: 60px;
+}
+
+

@@ -1,0 +1,18 @@
+.container-filter {
+  background-color: white;
+  width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 80px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+}
+.horizontal-container {
+  display: flex;
+}
+
+.app-search, .app-order {
+  margin-right: 10px;
+}

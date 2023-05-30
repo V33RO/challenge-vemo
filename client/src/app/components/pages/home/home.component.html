@@ -1,0 +1,12 @@
+<div class="container-filter">
+  <div class="horizontal-container">
+    <app-search   (searchCountries)="emitionSearch($event)" (noFound)="emitionNotFound($event)"></app-search>
+    <app-order (orderAllCountries)="emitionOrder($event)"></app-order>
+  </div>
+</div>
+<div class="container">
+  <app-countries [countries]="countries"></app-countries>
+  <app-not-found  *ngIf="countries.length===0" [countries]="countries"></app-not-found>
+</div>
+
+

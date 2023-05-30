@@ -1,0 +1,39 @@
+.countries--grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-detail{
+  position: fixed;
+  top: 0;
+  left:50%;
+  bottom:0;
+  right: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all ease-in-out;
+  transform: translate(100%);
+  &.active{
+    transform: translate(0);
+  }
+}
+
+// tablets
+@media screen and (min-width: 40em) and (max-width: 63.9em){
+  .countries--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+// web
+@media screen and (min-width: 64em){
+  .countries--grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+  }
+}

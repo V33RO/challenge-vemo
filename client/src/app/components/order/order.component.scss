@@ -1,0 +1,15 @@
+.button-order{
+  background-color: white;
+  border: 1px solid #c5c8c8;
+  border-radius: 4px;
+  width: 120px;
+  height:30px;
+  transition: background-color 0.3s ease;
+  font-size: medium;
+  margin-left: 100px;
+}
+.button-order:hover {
+  border: 1px solid #ACD9B2;
+  color: #ACD9B2;
+  border-radius: 5px;
+}

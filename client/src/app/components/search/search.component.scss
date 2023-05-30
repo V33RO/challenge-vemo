@@ -1,0 +1,27 @@
+.input{
+  margin-right: 10px;
+  border: 1px solid #c5c8c8;
+  width: 400px;
+  height:28px;
+  text-align: center;
+  outline: none;
+}
+
+.input:focus{
+  border: 1.8px solid #ACD9B2;
+}
+
+.button-buscar{
+  background-color: white;
+  border: 1px solid #c5c8c8;
+  border-radius: 4px;
+  width: 80px;
+  height:30px;
+  transition: background-color 0.3s ease;
+  font-size: medium;
+}
+.button-buscar:hover {
+  border: 1px solid #ACD9B2;
+  color: #ACD9B2;
+  border-radius: 5px;
+}
