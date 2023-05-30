@@ -74,7 +74,6 @@ generarColorAleatorio(): string {
     this.regionObservable().subscribe(
       (countriesRegion) => {
         this.countriesRegion = countriesRegion;
-        console.log('dd',this.countriesRegion);
         const conteoRegiones = new Map<string, number>();
         const conteoLanguage = new Map<string, number>();
 
@@ -99,7 +98,6 @@ generarColorAleatorio(): string {
         const contador: { [key: string]: number } = {};
         let labelColor:string[]=[];
         for (const item of this.countriesRegion) {
-          console.log(item.languages);
           if (item.languages) {
 
             for (const idioma in item.languages) {

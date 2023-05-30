@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/pages/home/home.component';
 import { DetailComponent } from './components/pages/detail/detail.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
-import {SearchBarComponent} from './components/pages/search-bar/search-bar.component';
 
 const routes: Routes = [
   {
@@ -23,10 +22,6 @@ const routes: Routes = [
     {
       path: 'dashboard',
       component: DashboardComponent
-    },
-    {
-      path: 'searchbar/:name',
-      component: SearchBarComponent
     },
 
 ];

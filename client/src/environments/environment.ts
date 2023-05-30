@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'http://localhost:3002/countries'
+
 };
 
 /*
@@ -11,6 +13,6 @@ export const environment = {
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *
  * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
+ * on performance if an error is thrown. enviroments[process.env.NODE_ENV]
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.

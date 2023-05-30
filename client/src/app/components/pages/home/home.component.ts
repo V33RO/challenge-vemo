@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.countriesService.getAllCountries(20,0)
+    this.countriesService.getAllCountries(250,0)
     .subscribe(data => {
       this.countries = data;
       this.offset+=this.limit;

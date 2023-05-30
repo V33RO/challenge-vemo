@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
 
 import { Country } from './../models/country.model';
+import { environment } from 'src/environments/environment';
 
 
 
@@ -9,12 +10,14 @@ import { Country } from './../models/country.model';
   providedIn: 'root'
 })
 export class CountriesService {
-  private apiUrl='http://localhost:3000/countries'
+  private apiUrl=  environment.apiUrl;
   order:string='ASC'
   constructor(
     private http: HttpClient
   ) { }
-
+  getLoadData(){
+    return this.http.get<Country[]>(`${this.apiUrl}/load-data`);
+  }
   getAllCountries(limit?: number, offset?: number) {
     let params = new HttpParams();
     if (limit && offset != null) {

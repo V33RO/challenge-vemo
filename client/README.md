@@ -16,3 +16,21 @@ En este proyecto se utilizo la libreria Chart.js para el diseño y visualizacion
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+
+## PROYECTO INCLUYE DOCKER
+
+##PRE REQUISITOS
+ -instalar docker
+ -instalar docker compose
+
+#step 1
+  -posicionarse en la raiz
+  -###bash### 
+    -docker-compose build 
+
+   generamos las imagenes necesarias: base, back, front incluye un gestor de postgres #pg admin
+
+  -###bash### 
+   -docker-compose up -d 
+   
+   para correr las imagenes

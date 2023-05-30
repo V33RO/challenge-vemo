@@ -5,4 +5,20 @@ div {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+
+}
+
+.pull-right{
+  background-color: white;
+  border: 1px solid #c5c8c8;
+  border-radius: 4px;
+  width: 80px;
+  height:30px;
+  transition: background-color 0.3s ease;
+  font-size: medium;
+}
+.pull-right:hover {
+  border: 1px solid #ACD9B2;
+  color: #ACD9B2;
+  border-radius: 5px;
 }

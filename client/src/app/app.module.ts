@@ -7,6 +7,7 @@ import { SwiperModule } from 'swiper/angular';
 import { NgChartsModule } from 'ng2-charts';
 import { ToastrModule } from 'ngx-toastr';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImgComponent } from './components/img/img.component';
@@ -20,7 +21,6 @@ import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { DetailComponent } from './components/pages/detail/detail.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
-import {SearchBarComponent} from './components/pages/search-bar/search-bar.component';
 import { OrderComponent } from './components/order/order.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 
@@ -35,7 +35,6 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
     ReversePipe,
     TimeAgoPipe,
     HighlightDirective,
-    SearchBarComponent,
     HomeComponent,
     DetailComponent,
     DashboardComponent,
