@@ -16,7 +16,7 @@ export class CountriesService {
     private http: HttpClient
   ) { }
   getLoadData(){
-    return this.http.get<Country[]>(`${this.apiUrl}/load-data`);
+    return this.http.get(`${this.apiUrl}/load-data`);
   }
   getAllCountries(limit?: number, offset?: number) {
     let params = new HttpParams();

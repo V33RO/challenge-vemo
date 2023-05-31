@@ -19,18 +19,34 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## PROYECTO INCLUYE DOCKER
 
-##PRE REQUISITOS
+# PRE REQUISITOS
  -instalar docker
  -instalar docker compose
 
-#step 1
+# step 1
+-###bash#####
+ -npm run buil posicionandote en la carpeta api
+ -ng buil posicionandote en la carpeta client
+
+# step 1
   -posicionarse en la raiz
   -###bash### 
     -docker-compose build 
 
    generamos las imagenes necesarias: base, back, front incluye un gestor de postgres #pg admin
 
+# step 2
   -###bash### 
    -docker-compose up -d 
    
    para correr las imagenes
+
+# step 3
+  -ingresar http://localhost:5050
+  -ingresar user:xxxx password:xxxx (son los del compose para servicio ##pgadmin)
+  -crear server dentro de pg admin con nombre "my_dbvemo"
+  -ingresar db => my_dbvemo =>solicitara password:password
+
+# step 4
+  -ingresar http://localhost:3000
+  -ingresar http://localhost:81

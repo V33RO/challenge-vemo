@@ -18,8 +18,9 @@ export class CountriesController {
   @Get('/load-data')
   @ApiResponse({ status: 200, description: 'Load db with api' })
   async loadData() {
+    const data = { message: 'Operación exitosa' };
     await this.countriesService.loadDataFromAPI();
-    return 'Datos cargados exitosamente.';
+    return data;
   }
   @Get('/populate')
   async findAllOrderPopulate() {

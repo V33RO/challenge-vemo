@@ -19,6 +19,10 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.countriesService.getLoadData()
+    .subscribe(data => {
+      console.log('cargado')
+    });
     this.countriesService.getAllCountries(250,0)
     .subscribe(data => {
       this.countries = data;
